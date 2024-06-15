@@ -130,6 +130,12 @@ Here are the steps to create a simple Node.js project that can be built into a D
 
 ### 10. Verify Output
 <pre>
+    > project@1.0.0 start /app
+    > node index.js
+
+    Hello, Dhony Abu Muhammad!
+    Server is supposed to run on port 3011
+    Server running at http://localhost:3011/
 </pre>
 
 &nbsp;
