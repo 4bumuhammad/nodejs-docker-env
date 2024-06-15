@@ -144,5 +144,13 @@ Here are the steps to create a simple Node.js project that can be built into a D
 
 &nbsp;
 
+---
+
+&nbsp;
+
+<div align="center">
+    <img src="./gambar-petunjuk/well_done.png" alt="well_done" style="display: block; margin: 0 auto;">
+</div> 
+
 &nbsp;
 
