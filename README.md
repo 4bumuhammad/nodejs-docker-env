@@ -96,6 +96,31 @@ Here are the steps to create a simple Node.js project that can be built into a D
 ### 8. Build Docker Image
 <pre>
 ❯ docker build -t nodejs-docker-env .
+
+    [+] Building 2.8s (10/10) FINISHED                                                                                                                                                                              
+    => [internal] load build definition from Dockerfile                                                                              0.0s
+    => => transferring dockerfile: 37B                                                                                               0.0s
+    => [internal] load .dockerignore                                                                                                 0.0s
+    => => transferring context: 2B                                                                                                   0.0s
+    => [internal] load metadata for docker.io/library/node:14.17.3                                                                   2.7s
+    => [1/5] FROM docker.io/library/node:14.17.3@sha256:976c9107158a1c85ab0702aec5b1d56bbb85de493ca50794e545a0271421e028             0.0s
+    => [internal] load build context                                                                                                 0.0s
+    => => transferring context: 896B                                                                                                 0.0s
+    => CACHED [2/5] WORKDIR /app                                                                                                     0.0s
+    => CACHED [3/5] COPY package*.json /app/                                                                                         0.0s
+    => CACHED [4/5] RUN npm install                                                                                                  0.0s
+    => [5/5] COPY . /app/                                                                                                            0.0s
+    => exporting to image                                                                                                            0.0s
+    => => exporting layers                                                                                                           0.0s
+    => => writing image sha256:097b9a7f5d4dfe8845a762ebaeecd640625856de1fb8b4b988e608f5f00174e2                                      0.0s
+    => => naming to docker.io/library/nodejs-docker-env                                                                              0.0s
+
+    Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+
+❯ docker images
+    REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+    nodejs-docker-env   latest    097b9a7f5d4d   11 seconds ago   891MB
 </pre>
 
 ### 9. Run the Docker Container
